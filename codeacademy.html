@@ -35,6 +35,46 @@
                 $(".loginn").hide();
                 $("#lgin").hide();
             });
+            $("#txtName").blur(function () {
+                var name = $("#txtName").val();
+                if (name == "")
+                    $("#dvName").show("slow");
+                else
+                    $("#dvName").hide("slow");
+            });
+            $("#txtPassword").blur(function () {
+                var password = $("#txtPassword").val();
+                if (password == "")
+                    $("#dvPassword").show("slow");
+                else
+                    $("#dvPassword").hide("slow");
+            });
+            $("#txtName2").blur(function () {
+                var name = $("#txtName2").val();
+                if (name == "")
+                    $("#dvName2").show("slow");
+                else
+                    $("#dvName2").hide("slow");
+            });
+            $("#txtPassword2").blur(function () {
+                var name = $("#txtPassword2").val();
+                if (name == "")
+                    $("#dvPassword2").show("slow");
+                else
+                    $("#dvPassword2").hide("slow");
+            });
+
+
+
+            $("#btnlgin").click(function () {
+                var name = $("#txtName").val();
+                var password = $("#txtPassword").val();
+                if (name == "Sameer" && name != "" && password == "sameer")
+                    window.alert("Thank You");
+                else
+                    window.alert("Incorrect user name or password");
+
+            })
         });
     </script>
 </head>
@@ -42,26 +82,27 @@
 
     <div id="topleft" style="border-bottom:ridge;"><font size="8" ><strong style="border-style: solid;"><u>Code</u></strong>Academy</font> </div>
     <div id="top" style="border-bottom:ridge;"> <button class="a" id="1">Login</button>   <button class="a" id="2">SignUp</button></div>
-    <div id="mid"> <table border="0">
+    <div id="mid"> 
+    <table border="0">
         <tr >
-            <td height="100px" colspan="3"></td>
+            <td height="120px" colspan="3"></td>
         </tr>
         <tr>
-            <td width="30%" height="10px"></td>
+            <td width="33%" height="10px"></td>
             <td ><font size="10px">HTML & CSS</font></td>
-            <td width="30%"></td>
+            <td width="33%"></td>
         </tr>
                         <tr>
-                            <td width="30%" height="10px"></td>
+                            <td width="33%" height="10px"></td>
                             <td>Learn How to create website by structuring and styling your pages with HTML and CSS</td>
-                            <td width="30%"></td>
+                            <td width="33%"></td>
                         </tr>
 
 
                         <tr>
-                            <td width="30%" height="10px"></td>
+                            <td width="33%" height="10px"></td>
                             <td><button class="a" id="btnstart">Start</button></td>
-                            <td width="30%"></td>
+                            <td width="33%"></td>
                         </tr>
 
         </table></div>
@@ -110,7 +151,7 @@
             </tr>
             <tr>
                 <td></td>
-                <td><input type="button" value="Login" class="b"/></td>
+                <td><input type="button" value="Login" class="b" id="btnlgin"/></td>
             </tr>
         </table>
     
@@ -133,10 +174,10 @@
                 User Name:
             </td>
             <td>
-                <input type="text" id="txtName" />
+                <input type="text" id="txtName2" />
             </td>
             <td>
-                <div id="dvName" style="display:none;background-color:brown;color:yellow;">
+                <div id="dvName2" style="display:none;background-color:brown;color:yellow;">
                     Name is Missing
                 </div>
             </td>
@@ -149,7 +190,7 @@
                         <input type="email" id="emailid" />
                     </td>
                     <td>
-                        <div id="dvName" style="display:none;background-color:brown;color:yellow;">
+                        <div id="email" style="display:none;background-color:brown;color:yellow;">
                             Email is Missing
                         </div>
                     </td>
@@ -158,10 +199,10 @@
                 Password:
             </td>
             <td>
-                <input type="password" id="txtPassword" />
+                <input type="password" id="txtPassword2" />
             </td>
             <td>
-                <div id="dvPassword" style="display:none;background-color:brown;color:yellow;">
+                <div id="dvPassword2" style="display:none;background-color:brown;color:yellow;">
                     Password is Missing
                 </div>
             </td>
