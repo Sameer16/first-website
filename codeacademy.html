@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <script src="jquery-2.2.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".loginn").hide();
+            $("#lgin").hide();
+            $(".signu").hide();
+            $("#signup").hide();
+
+            $(".x").click(function () {
+                $(".loginn").hide();
+                $("#lgin").hide();
+                $(".signu").hide();
+                $("#signup").hide();
+            });
+            $("#1").click(function(){
+                $(".loginn").slideDown();
+                $("#lgin").show("slow");
+                $(".signu").hide();
+                $("#signup").hide();
+            });
+
+            $("#btnstart").click(function () {
+        
+                location.href = "Debug.html";
+
+            });
+            $("#2").click(function () {
+                $(".signu").slideDown();
+                $("#signup").show("slow");
+                $(".loginn").hide();
+                $("#lgin").hide();
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <div id="topleft" style="border-bottom:ridge;"><font size="8" ><strong style="border-style: solid;"><u>Code</u></strong>Academy</font> </div>
+    <div id="top" style="border-bottom:ridge;"> <button class="a" id="1">Login</button>   <button class="a" id="2">SignUp</button></div>
+    <div id="mid"> <table border="0">
+        <tr >
+            <td height="100px" colspan="3"></td>
+        </tr>
+        <tr>
+            <td width="30%" height="10px"></td>
+            <td ><font size="10px">HTML & CSS</font></td>
+            <td width="30%"></td>
+        </tr>
+                        <tr>
+                            <td width="30%" height="10px"></td>
+                            <td>Learn How to create website by structuring and styling your pages with HTML and CSS</td>
+                            <td width="30%"></td>
+                        </tr>
+
+
+                        <tr>
+                            <td width="30%" height="10px"></td>
+                            <td><button class="a" id="btnstart">Start</button></td>
+                            <td width="30%"></td>
+                        </tr>
+
+        </table></div>
+    <div id="bottomleft" style="border-top:ridge;">
+        <div><strong> 4.5m+ </strong></div>enrolled student
+    </div>
+    <div id="bottom" style="border-top:ridge;"><div><strong> 7 Hours </strong></div>estimated course time</div>
+    <div id="bottomright" style="border-top:ridge;"> <div><strong>Beginner</strong></div>required technical level</div>
+    
+
+
+
+
+
+
+
+    <div class="loginn" >
+        <button value="x" class="x" style="position:fixed; left:61%;top:28%;background-color:transparent;opacity:0.4">X</button>
+<img src="elearning.jpg" style="width:100%;height:100%;border-radius:50px 50px 50px 50px;" />
+ </div>  <table id="lgin">
+            <tr>
+                <td>
+                    User Name:
+                </td>
+                <td>
+                    <input type="text" id="txtName" />
+                </td>
+                <td>
+                    <div id="dvName" style="display:none;background-color:brown;color:yellow;">
+                        Name is Missing
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Password:
+                </td>
+                <td>
+                    <input type="password" id="txtPassword" />
+                </td>
+                <td>
+                    <div id="dvPassword" style="display:none;background-color:brown;color:yellow;">
+                        Password is Missing
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" value="Login" class="b"/></td>
+            </tr>
+        </table>
+    
+
+
+
+
+
+
+
+
+
+
+    <div class="signu">
+        <button value="x" class="x" style="position:fixed; left:61%;top:28%;background-color:transparent;opacity:0.4">X</button>
+        <img src="elearning.jpg" style="width:100%;height:100%;border-radius:50px 50px 50px 50px;" />
+    </div>  <table id="signup">
+        <tr>
+            <td>
+                User Name:
+            </td>
+            <td>
+                <input type="text" id="txtName" />
+            </td>
+            <td>
+                <div id="dvName" style="display:none;background-color:brown;color:yellow;">
+                    Name is Missing
+                </div>
+            </td>
+        </tr>
+                <tr>
+                    <td>
+                       Email Id:
+                    </td>
+                    <td>
+                        <input type="email" id="emailid" />
+                    </td>
+                    <td>
+                        <div id="dvName" style="display:none;background-color:brown;color:yellow;">
+                            Email is Missing
+                        </div>
+                    </td>
+                </tr><tr>
+            <td>
+                Password:
+            </td>
+            <td>
+                <input type="password" id="txtPassword" />
+            </td>
+            <td>
+                <div id="dvPassword" style="display:none;background-color:brown;color:yellow;">
+                    Password is Missing
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="button" value="SignUp" class="b"/></td>
+        </tr>
+    </table>
+
+
+
+
+</body>
+</html>
